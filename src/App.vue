@@ -2,7 +2,7 @@
   <div id="app">
     <Header msg="Olá, seja bem vindo!"/>
     <Slogan slogan="CADASTRE SEUS CARTÕES E DEIXE SUA VIDA FINANCEIRA MAIS ORGANIZADA."/>
-    <Footer/>
+    <Footer />
   </div>
 </template>
 
@@ -15,6 +15,12 @@ export default {
   name: 'App',
   components: {
     Header, Slogan, Footer
+  },
+
+  methods: {
+    nubank(){
+      alert("laskdasd")
+    }
   }
 }
 </script>
@@ -36,7 +42,7 @@ body {
 
 @media (max-width: 800px) {
   #app {
-    height: 350vh
+    height: 370vh;
   }
   .logo {
     width: 5rem;
@@ -54,6 +60,33 @@ body {
     padding: 0.5rem;
     height: 150px;
     
+  }
+}
+
+@media (width: 820px){
+  html {
+    font-size: 0.8rem;
+  }
+}
+
+@media (width: 912px){
+  html {
+    font-size: 0.8rem;
+  }
+}
+
+@media (width: 1024px){
+  #app {
+    height: 410vh;
+  }
+}
+
+@media (width: 1280px){
+  html{
+    font-size: 85.5%;
+  }
+  #app {
+    width: 130vh;
   }
 }
 </style>
